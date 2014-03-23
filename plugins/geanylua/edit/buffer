@@ -1,0 +1,36 @@
+# -------------
+# -- IMPORTS --
+# -------------
+
+# standard library imports
+from django.db import models
+from django.contrib.auth.models import User
+
+# related third party imports
+
+# local application/library specific imports
+
+# ---------------
+# -- CONSTANTS --
+# ---------------
+
+# Create your models here.
+
+
+class Categoria(models.Model):
+    titulo = models.CharField(max_length=140)
+
+    def __str__(self):
+        return self.titulo
+
+
+class Enlace(models.Model):
+    titulo = models.CharField(max_length=140)
+    enlace = models.URLField()
+    votos = models.IntegerField(default=0)
+    categoria = models.ForeignKey(Categoria)
+    usuario = models.ForeignKey(User)
+    timestamp = models.Dateti
+
+    def __str__(self):
+        return '{0} - {1}'.format(self.titulo, self.enlace)

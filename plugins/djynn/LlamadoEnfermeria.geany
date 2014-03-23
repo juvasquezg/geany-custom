@@ -1,0 +1,33 @@
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+indent_mode=2
+detect_indent_width=false
+
+[project]
+name=LlamadoEnfermeria
+base_path=/home/juvasquezg/Dropbox/llamado-enfermeria
+make_in_base_path=true
+description=Proyecto de llamado de Enfermería
+run_cmd=LlamadoEnfermeria
+file_patterns=*.c;*.cc;*.cfg;*.conf;*.cpp;*.css;*.cxx;*.h;*.hh;*.hpp;*.html;*.hxx;*.ini;*.java;*.js;*.lua;*.pas;*.perl;*.php;*.pl;*.po;*.py;*.rc;*.sh;*.txt;*.vala;*.xhtml;*.xml;
+
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=true
+strip_trailing_spaces=true
+replace_tabs=false
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=80
+
+[files]
+current_page=0
+
+[build-menu]
+EX_00_LB=_Ejecutar
+EX_00_CM=LlamadoEnfermeria
+EX_00_WD=/home/juvasquezg/Dropbox/llamado-enfermeria

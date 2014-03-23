@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+    <!-- External Style Sheet -->
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+
+    <!-- Embedded Style Sheet -->
+    <style type="text/css">
+
+    </style>
+
+    <!-- External Scripts -->
+    <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/knockout-2.3.0.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/ViewModel.js"></script>
+    <script type="text/javascript" src="/js/jquery.marquee.js"></script>
+
+    <!-- Embedded Scripts -->
+    <script type="text/javascript">
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    <h2>Bienvenido {{ user }}</h2>
+    <a href="/log-out">Log out</a>
+    <ul id="users">
+    {% for person in users %}
+        <li>{{person}}</li>
+    {% endfor %}
+    <ul>
+{% endblock %}
