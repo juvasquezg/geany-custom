@@ -1,0 +1,14 @@
+
+[settings]
+wordchars=_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789áéíóú-=
+
+[build-menu]
+FT_00_LB=Compilar
+FT_00_CM=rst2pdf %f -l es -s *.style -o %e.pdf
+FT_00_WD=
+FT_01_LB=Ejecutar
+FT_01_CM=
+FT_01_WD=
+EX_00_LB=_Ejecutar
+EX_00_CM=evince %e.pdf
+EX_00_WD=
