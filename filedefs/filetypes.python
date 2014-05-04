@@ -1,0 +1,13 @@
+[build-menu]
+FT_00_LB=PEP8
+FT_00_CM=pep8 "%f"
+FT_00_WD=
+FT_01_LB=Pyflakes
+FT_01_CM=pyflakes "%f"
+FT_01_WD=
+EX_00_LB=_Ejecutar
+EX_00_CM=python3 "%f"
+EX_00_WD=
+EX_01_LB=
+EX_01_CM=
+EX_01_WD=
